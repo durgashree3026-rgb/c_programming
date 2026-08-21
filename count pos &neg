@@ -1,0 +1,40 @@
+#include<stdio.h>
+int main()
+{
+    int n;
+    scanf("%d",&n);
+    int arr[n];
+    int count;
+    int pos_count=0;
+    int neg_count=0;
+    int zero_count=0;
+    
+    //read array
+    
+    for(int i=0;i<n;i++)
+    {                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         
+        scanf("%d",&arr[i]);
+    }
+    
+    //positive, negative,zero
+    
+    for(int i=0;i<n;i++)
+    {
+        count =1;
+        if(arr[i]>0)
+        {
+            pos_count++;                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                       
+        }
+        else if(arr[i]<0)
+        {
+            neg_count++;
+        }
+        else
+        {
+            zero_count++;
+        }
+    }
+    printf("positive:%d\nnegative:%d\nzero:%d\n",pos_count,neg_count,zero_count);
+    return 0;
+
+}
