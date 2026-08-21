@@ -1,0 +1,24 @@
+#include<stdio.h>
+#include<string.h>
+int main()
+{
+    char str[40];
+    fgets(str,sizeof(str),stdin);
+     int len =strlen(str);
+     int vow_count=0;
+     int con_count=0;
+     //find vowels and consonents
+     for(int i=0;i<len-1;i++)
+     {
+         if(str[i]=='a'|str[i]=='e'|str[i]=='i'|str[i]=='o'|str[i]=='u')
+         {
+            vow_count++; 
+         }
+         else
+         {
+             con_count++;
+         }
+     }
+     printf("Vowels:%d\nConsonent:%d",vow_count,con_count);
+     return 0;
+}
