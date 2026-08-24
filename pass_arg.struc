@@ -1,0 +1,31 @@
+
+
+#include<stdio.h>
+struct area
+{
+    float len;
+    float bre;
+};
+
+float rec(float len,float bre)
+{
+    return len * bre;
+}
+//func main
+int main()
+{
+    struct area a;
+    
+    float result;
+    printf("\nEnter length:");
+    scanf("%f",&a.len);
+    
+    printf("\nEnter breadth:");
+    scanf("%f",&a.bre);
+    
+    result = rec(a.len , a.bre);
+    
+    //display
+    printf("\nArea of Rectangle is:%.2f",result);
+    return 0;
+}
