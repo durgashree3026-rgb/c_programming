@@ -1,0 +1,23 @@
+#include<stdio.h>
+//struct
+struct data_birth
+{
+    int date;
+    int month;
+    char year[30];
+};
+
+//main function
+int main()
+{
+    struct data_birth d;
+    //get data 
+    scanf("%d",&d.date);//date
+    scanf("\n%d",&d.month);//month
+    scanf("\n%s",d.year);
+    
+    //Display the data
+    printf("\n Data of Birth:%d/%d/%s",d.date,d.month,d.year);
+    return 0;
+}
+    
