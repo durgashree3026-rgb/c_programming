@@ -1,0 +1,30 @@
+#include<stdio.h>
+//struct 
+
+struct employee
+{
+    int ID;
+    char name[30];
+};
+
+void  details(struct employee *ptr)
+{
+printf("\nEmployee ID:%d",ptr->ID);
+printf("\nEmployee Name:%s",ptr->name);
+}
+//main
+int main()
+{
+    struct employee e;
+    
+    //get data
+    printf("\nEnter id:");
+    scanf("%d",&e.ID);
+    
+    printf("\nEnter name:");
+    scanf("%s",e.name);
+    
+    //declare function
+    details(&e);
+    return 0;
+}
