@@ -1,0 +1,38 @@
+#include<stdio.h>
+//strucut1
+struct address
+{
+  char location[50];
+  int pin_code;
+};
+//nested struct
+struct place
+{
+    int door_no;
+    char street[60];
+    char city[50];
+    
+    struct address a;//struct declaration
+};
+
+//main
+int main()
+{
+    struct place p;
+    
+    scanf("%d",&p.door_no);
+    scanf("%s",p.street);
+    scanf("%s",p.city);
+    scanf("%s",p.a.location);
+    scanf("%d",&p.a.pin_code);
+    
+    //Display 
+    
+    printf("\nDoo number:%d",p.door_no);
+    printf("\nStreet:%s",p.street);
+    printf("\nCity:%s",p.city);
+    printf("\nLocation:%s",p.a.location);
+    printf("\nPincode:%d",p.a.pin_code);
+    
+    return 0;
+}
