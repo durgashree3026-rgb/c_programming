@@ -1,0 +1,29 @@
+#include<stdio.h>
+//struct
+struct rectangle
+{
+    int length;
+    float breadth;
+    
+};
+
+float area(struct rectangle r)
+{
+    return r.length * r.breadth;
+}
+
+//main function
+int main()
+{
+    struct rectangle r;
+    float result;
+    
+    //get the data
+    scanf("%d\n",&r.length);
+    scanf("%f",&r.breadth);
+    
+    // function call
+    result = area(r);
+    printf("Area of Rectangle:%.2f",result);
+    return 0;
+}
